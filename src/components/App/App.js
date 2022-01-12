@@ -45,7 +45,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <PartyLeader leader={guestList[0]}/>
+      {guestList[0] && <PartyLeader leader={guestList[0]}/>}
       <h2>Add a new guest</h2>
       <GuestForm 
         addGuest = {addGuest}
